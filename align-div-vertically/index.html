@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Align Div Vertially</title>
+  <script>
+    const alignTop = () => {
+      const commentBox = document.querySelector('.comment-box');
+      commentBox.classList.remove('center', 'bottom');
+      commentBox.classList.add('top');
+    }
+    const alignCenter = () => {
+      const commentBox = document.querySelector('.comment-box');
+      commentBox.classList.remove('top', 'bottom');
+      commentBox.classList.add('center');
+    }
+    const alignBottom = () => {
+      const commentBox = document.querySelector('.comment-box');
+      commentBox.classList.remove('top', 'center');
+      commentBox.classList.add('bottom');
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="left-content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in facilisis lacus. Morbi nec pretium sem, in tristique nisl. Fusce bibendum luctus vulputate. Aliquam erat volutpat. Etiam leo lorem, elementum sed turpis ut, dictum pellentesque turpis. Vivamus justo neque, pretium eu nunc non, commodo varius lorem. Nulla gravida dui a ante semper, aliquet scelerisque enim congue. Etiam placerat libero sit amet lacus maximus, in gravida lectus ultricies. Integer suscipit enim efficitur vestibulum ornare. Integer fermentum dapibus ex, a ultrices ligula laoreet eu. Suspendisse dolor diam, ullamcorper vitae fermentum id, iaculis non justo. Fusce vel elit sed arcu pharetra consequat non vitae tellus.
+      </p>
+      <p>
+        Integer eget velit et purus viverra fringilla ac quis quam. Phasellus scelerisque, lectus sed mattis efficitur, sem justo facilisis purus, sit amet fringilla mauris libero at justo. Nunc ultricies sit amet magna vel egestas. Suspendisse non libero orci. Vestibulum fermentum tellus a orci eleifend, eu pharetra felis porttitor. Maecenas vulputate nulla ac orci pharetra, sit amet mattis purus mattis. Morbi dapibus erat quis sapien dignissim lobortis. Sed aliquam elit eu risus tempus, sed dictum nisl varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam accumsan nibh in erat ornare, quis auctor magna maximus.
+      </p>
+      <p>
+        Fusce sed risus elementum augue hendrerit luctus id at magna. Nulla bibendum vestibulum arcu, vel porttitor nibh feugiat nec. Nullam nec est non nisi eleifend faucibus. Sed tincidunt, risus accumsan vulputate condimentum, massa nisl condimentum ipsum, id bibendum nunc magna eu diam. Quisque sit amet congue ante, at fringilla erat. Quisque velit massa, hendrerit vitae dolor vel, maximus scelerisque ex. Duis euismod, dui at dapibus pulvinar, sapien justo vestibulum turpis, interdum porttitor odio enim auctor ipsum. Vestibulum sit amet sagittis purus. Proin dapibus sapien eleifend, ultricies ligula ac, sollicitudin quam. Vestibulum ornare cursus tellus, eu consectetur turpis posuere aliquet. Curabitur scelerisque neque sit amet hendrerit commodo.
+      </p>
+    </div>
+
+    <div class="right-content">
+      <div class="comment-box center">
+        This is the comment box
+      </div>
+    </div>
+  </div>
+  <div class="control-buttons">
+    <button onclick="alignTop()">Top</button>
+    <button onclick="alignCenter()">Center</button>
+    <button onclick="alignBottom()">Bottom</button>
+  </div>
+</body>
+</html>
